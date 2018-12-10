@@ -1,0 +1,2 @@
+ntp_server: [pool.ntp.org, server 0.sg.pool.ntp.org, server 1.sg.pool.ntp.org, server 2.sg.pool.ntp.org, server 3.sg.pool.ntp.org]
+users: jsimon

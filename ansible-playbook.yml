@@ -1,0 +1,13 @@
+---
+
+- name: apply common configuration to all nodes
+  hosts: all
+  remote_user: vagrant
+  become: yes
+  roles:
+    - common
+    - user
+    - bind9
+    - monit
+    - shell
+    - ntp

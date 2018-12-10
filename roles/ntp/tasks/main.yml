@@ -1,0 +1,9 @@
+--- 
+- 
+  apt: "name=ntp update_cache=yes"
+  name: "Install NTP"
+- 
+  name: "Copy the ntp.conf template file"
+  notify: 
+    - "restart ntp"
+  template: "src=ntp.conf.j2 dest=/etc/ntp.conf"

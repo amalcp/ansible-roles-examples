@@ -1,0 +1,18 @@
+--- 
+- 
+  apt: 
+    update_cache: true
+  name: "apt-get update"
+- 
+  apt: 
+    name: "{{ packages }}"
+  name: "Install list of packages"
+  vars: 
+    packages: 
+      - screen
+      - vim
+      - htop
+      - git
+      - atop
+      - unbound
+      - monit
